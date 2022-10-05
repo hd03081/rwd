@@ -227,6 +227,12 @@ main > section {
   #gnb ul li a {
     color : #fff;
   }
+  #exit {
+    position: absolute;
+    font-size: 32px;
+    font-weight: bold;
+    left :96px;
+  }
   main > section {
     width : 50%;
   }

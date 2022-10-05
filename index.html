@@ -24,6 +24,7 @@
             <li><a href="#">리스트2</a></li>
             <li><a href="#">리스트3</a></li>
           </ul>
+          <a id="exit" href="#">X</a>
         </nav>
     </header>
     <section id="event">
@@ -58,10 +59,14 @@
     <script>
       const gnbView = document.querySelector(".gnbView");
       const gnb = document.getElementById("gnb");
+      const exit = document.getElementById("exit");
       gnbView.addEventListener('click',()=> {
         gnb.style.left = "0px";
       })
       gnb.addEventListener('mouseleave',()=> {
+        gnb.style.left = "-200px";
+      })
+      exit.addEventListener('click',()=> {
         gnb.style.left = "-200px";
       })
     </script>
